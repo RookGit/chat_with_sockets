@@ -1,0 +1,9 @@
+{
+  "login": {
+    "controller": "login"
+  },
+
+  "chat": {
+    "controller": "chat"
+  }
+}
