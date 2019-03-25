@@ -1,0 +1,42 @@
+{% extends "main.twig" %}
+
+{% block body %}
+
+    <div class="row" data-context="loader">
+        <div class="col-12 text-center">
+            <div class="text-center text-info">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-context="chat" class="row d-none">
+        <div class="col-12 col-xl-6">
+            <h3>Сообщения:</h3>
+            <div data-context="messages_field" class="messages bg-info text-light">
+
+            </div>
+
+            <form>
+            <div class="input-group mt-4">
+                <input name="message_chat" type="text" class="form-control" maxlength="200" placeholder="Введите сообщение" >
+                <div class="input-group-append">
+                    <button data-click="send_message" class="btn btn-info" type="button">Отправить</button>
+                </div>
+            </div>
+            </form>
+
+        </div>
+
+        <div class="col-12 col-xl-6">
+            <h3>Пользователи онлайн <span data-context="count_online">0</span>:</h3>
+            <div data-context="users_field" class="users_field bg-light text-dark p-2">
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

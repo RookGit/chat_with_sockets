@@ -1,0 +1,29 @@
+{% extends "main.twig" %}
+
+{% block body %}
+
+    <div class="row" data-context="loader">
+        <div class="col-12 text-center">
+            <div class="text-center text-info">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-none" data-context="welcome">
+        <div class="col-12 col-lg-7 col-xl-6">
+            <h3>Добро пожаловать в онлайн-чат!</h3>
+            <h4 class="text-info">Заполните данные для входа:</h4>
+            <form>
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" class="form-control" name="name" placeholder="Введите имя" autocomplete="off">
+                </div>
+                <button data-click="reg_user" type="submit" class="btn btn-success">Войти в чат</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+

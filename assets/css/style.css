@@ -1,0 +1,36 @@
+.op-9 {
+    opacity: 0.9;
+}
+
+.messages, .users_field {
+    height: 60vh;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+
+[data-context="message_chat"] > div {
+    display: inline-block;
+}
+
+[data-context="name"]
+{
+    font-weight: bold;
+    text-decoration: underline;
+    width: 15%;
+}
+
+[data-context="message"]
+{
+    width: 70%;
+}
+
+[data-context="date"]
+{
+    width: 15%;
+    text-align: right;
+}
+
+.bg-darkinfo {
+    background-color: #0f6674;
+}

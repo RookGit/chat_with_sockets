@@ -1,9 +1,22 @@
 {
+
+  "/": {
+    "controller": "login",
+    "method": "get"
+  },
+
   "login": {
-    "controller": "login"
+    "controller": "login",
+    "method": "get"
   },
 
   "chat": {
-    "controller": "chat"
+    "controller": "chat",
+    "method": "get"
+  },
+
+  "api": {
+    "controller": "api",
+    "method": "post"
   }
 }

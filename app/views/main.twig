@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/files/favicon-16x16.png">
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+{% include 'header.twig' %}
+
+<div class="container-fluid p-5">
+
+    {% block body %}
+    {% endblock %}
+
+</div>
+
+
+
+<div id="footer">
+    {% block footer %}
+    {% endblock %}
+</div>
+
+
+</body>
+
+{% include 'scripts.twig' %}
+
+</html>
